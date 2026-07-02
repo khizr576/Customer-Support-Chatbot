@@ -20,5 +20,3 @@ A professional customer support assistant built for the INNOVIAST Week 1 Assignm
 2. Create .env file with OPENAI_API_KEY
 3. Run `streamlit run app.py`
 
-## Demo
-[Link to your deployment]
