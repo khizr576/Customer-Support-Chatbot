@@ -129,6 +129,7 @@ def get_bot_response(user_message):
         
     except openai.OpenAIError as e:
         # API error handling
+        print(f"API ERROR: {e}")
         st.session_state.fallback_count += 1
         if st.session_state.fallback_count >= 2:
             return ESCALATION_MESSAGE
