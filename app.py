@@ -127,7 +127,7 @@ def get_bot_response(user_message):
             
         return reply
         
-    except openai.error.OpenAIError as e:
+    except openai.OpenAIError as e:
         # API error handling
         st.session_state.fallback_count += 1
         if st.session_state.fallback_count >= 2:
@@ -227,4 +227,5 @@ if __name__ == "__main__":
         from streamlit.web import cli as stcli
         sys.argv = ["streamlit", "run", __file__]
         sys.exit(stcli.main())
+
 
